@@ -1,5 +1,5 @@
 # Anagrams and Antigrams
-## Lela Smith
+## By: Lela Smith
 
 ### Description
 #### Algorithm to check if words two words are anagrams or antigrams. A project to practice Test Driven Development in Ruby.
@@ -9,7 +9,7 @@
 |---|---|---|
 |It will check if two words are anagrams|"meteor", "remote"|"These words are anagrams"|
 |It will account for the possibility that words might have different cases but can still be anagrams|"Act", "Cat"|"These words are anagrams"|
-|check if the inputs are words|"crzct", "tczrc"|"Please input an actual word"|
+|check if the inputs are words|"crzct", "tczrc"|"Please input actual words"|
 |It will check to see if the the two words are antigrams if they are not anagrams|"blue", "crazy"|"These words are antigrams"|
 |It will account for multiple words being anagrams or antigrams|"young lad", "an old guy"|"These words are anagrams"|
 
@@ -27,6 +27,7 @@
 * Test Driven Development
 
 ### Further Exploration
+[Anagram](https://en.wikipedia.org/wiki/Anagram)
 
 ### License
 #### This software is licensed under the MIT license.

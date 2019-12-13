@@ -1,5 +1,5 @@
 class Anagrams_Antigrams
-  def anagrams
+  def anagram
   #code goes here
   end
 end
