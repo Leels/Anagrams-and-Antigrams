@@ -33,7 +33,7 @@ describe('anagram') do
   #   expect(anagrams_antigrams.anagram()).to(eq(true))
   # end
   it('will ask user to input an actual word if there are no vowels') do
-    anagrams_antigrams =  Anagrams_Antigrams.new('hug', 'dcdt')
+    anagrams_antigrams =  Anagrams_Antigrams.new('hpg', 'dcdt')
     expect(anagrams_antigrams.anagram()).to(eq("Please enter an actual word"))
   end
 end
