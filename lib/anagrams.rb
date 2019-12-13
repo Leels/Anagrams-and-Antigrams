@@ -1,13 +1,19 @@
 
 class Anagrams_Antigrams
-  attr_accessor(:word)
+  attr_accessor(:input1, :input2)
 
-def initialize(word)
-  @word = word
+def initialize(input1, input2)
+  @input1 = input1
+  @input2 = input2
 end
 
   def anagram
-  another_word = @word.chars.sort.join
-  another_word
+  word1 = @input1.chars.sort.join
+  word2 = @input2.chars.sort.join
+  if word1 = word2
+    true
+  else
+    false
+  end
   end
 end
