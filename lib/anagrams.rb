@@ -7,7 +7,7 @@ def initialize(word)
 end
 
   def anagram
-  another_word = @word.chars
+  another_word = @word.chars.sort.join
   another_word
   end
 end
