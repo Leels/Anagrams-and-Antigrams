@@ -24,8 +24,16 @@ describe('anagram') do
   #   anagrams_antigrams =  Anagrams_Antigrams.new('young lad', 'an old man')
   #   expect(anagrams_antigrams.anagram()).to(eq(true))
   # end
-  it('will caccount for words that have apostrophes') do
-    anagrams_antigrams =  Anagrams_Antigrams.new('don\'t', 'dont')
-    expect(anagrams_antigrams.anagram()).to(eq(true))
+  # it('will caccount for words that have apostrophes') do
+  #   anagrams_antigrams =  Anagrams_Antigrams.new('don\'t', 'dont')
+  #   expect(anagrams_antigrams.anagram()).to(eq(true))
+  # end
+  # it('will caccount for words that have apostrophes') do
+  #   anagrams_antigrams =  Anagrams_Antigrams.new('don\'t', 'dont')
+  #   expect(anagrams_antigrams.anagram()).to(eq(true))
+  # end
+  it('will ask user to input an actual word if there are no vowels') do
+    anagrams_antigrams =  Anagrams_Antigrams.new('hgnnt', 'dont')
+    expect(anagrams_antigrams.anagram()).to(eq("there isn't a vowel"))
   end
 end
