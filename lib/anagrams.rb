@@ -8,16 +8,16 @@ def initialize(input1, input2)
 end
 
   def anagram
-  word1 = (@input1.downcase.chars.sort.join).tr(" ", "")
+  word1 = ((@input1.downcase.chars.sort.join).tr("'", "")).tr("\'", "")
   word2 = (@input2.downcase.chars.sort.join).tr(" ", "")
   if word1 == word2
+    puts word1
+    puts word2
     true
-    # puts word1
-    # puts word2
   else
+    puts word1
+    puts word2
     false
-    # puts word1
-    # puts word2
   end
   end
 end
