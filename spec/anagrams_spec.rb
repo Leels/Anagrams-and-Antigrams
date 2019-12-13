@@ -16,5 +16,8 @@ describe('anagram') do
     anagrams_antigrams =  Anagrams_Antigrams.new('cat', 'act')
     expect(anagrams_antigrams.anagram()).to(eq(true))
   end
-
+  it('will ccount for words that have different cases') do
+    anagrams_antigrams =  Anagrams_Antigrams.new('Tea', 'Eat')
+    expect(anagrams_antigrams.anagram()).to(eq(true))
+  end
 end
