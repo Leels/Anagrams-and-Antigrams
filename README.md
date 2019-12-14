@@ -12,6 +12,7 @@
 |check if the inputs are words|"crzct", "tczrc"|"Please input actual words"|
 |It will check to see if the the two words are antigrams if they are not anagrams|"blue", "crazy"|"These words are antigrams"|
 |It will account for multiple words being anagrams or antigrams|"young lad", "an old guy"|"These words are anagrams"|
+|It will identify if the inputs are neither anagrams nor antigrams|"blue", "boy"|"These are neither anamgrams nor antigrams"|
 
 ### Known Bugs
 #### None
