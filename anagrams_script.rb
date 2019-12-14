@@ -8,13 +8,15 @@ input1 = gets.chomp
 puts 'Word/phrase no. 2:'
 input2 = gets.chomp
 anagrams_antigrams = Anagrams_Antigrams.new(input1, input2)
-outcome = anagrams_antigrams.anagram()
+not_word = anagrams_antigrams.not_word()
+antigram = anagrams_antigrams.antigram()
+anagram = anagrams_antigrams.anagram()
 
-if !input1.downcase.chars.any? { |i| ["a", "e", "i", "o", "u", "y"].include? i } || !input2.downcase.chars.any? { |i| ["a", "e", "i", "o", "u", "y"].include? i }
+if not_word
   puts "Please enter actual words, silly!"
-elsif !input1.downcase.chars.any? { |i| (input2.downcase.chars).include? i }
-  puts "#{input1} and #{input2} are not anagrams... but are ANTIGRAMS!!!"
-elsif outcome
+elsif antigram
+  puts "#{input1} and #{input2} are not anagrams but are ANTIGRAMS!!!"
+elsif anagram
   puts "#{input1} and #{input2} are both ANAGRAMS!!!"
 else
   puts "#{input1} and #{input2} are neither anagrams nor antigrams."
