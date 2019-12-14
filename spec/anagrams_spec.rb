@@ -37,7 +37,7 @@ describe('anagram') do
   #   expect(anagrams_antigrams.anagram()).to(eq("Please enter an actual word"))
   # end
   it('will check if the two words are antigrams') do
-    anagrams_antigrams =  Anagrams_Antigrams.new('happy', 'bus')
-    expect(anagrams_antigrams.anagram()).to(eq("These are antigrams"))
+    anagrams_antigrams =  Anagrams_Antigrams.new('an old guy', 'young lad')
+    expect(anagrams_antigrams.anagram()).to(eq(true))
   end
 end
