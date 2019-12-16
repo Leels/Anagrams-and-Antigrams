@@ -7,22 +7,17 @@ class Anagrams_Antigrams
   end
 
   def not_word
-    if !input1.downcase.chars.any? { |i| ["a", "e", "i", "o", "u", "y"].include? i } || !input2.downcase.chars.any? { |i| ["a", "e", "i", "o", "u", "y"].include? i }
-      true
-    end
+    (!input1.downcase.chars.any? { |i| ["a", "e", "i", "o", "u", "y"].include? i } || !input2.downcase.chars.any? { |i| ["a", "e", "i", "o", "u", "y"].include? i }) ? true : false
   end
 
   def antigram
-    if !input1.downcase.chars.any? { |i| (input2.downcase.chars).include? i }
-      true
-    end
+    !input1.downcase.chars.any? { |i| (input2.downcase.chars).include? i } ? true : false
   end
 
   def anagram
     word1 = ((input1.downcase.chars.sort.join).tr(" ", "")).tr("\'", "")
     word2 = ((input2.downcase.chars.sort.join).tr(" ", "")).tr("\'", "")
-    if word1 == word2
-      true
-    end
+    word1 == word2 ? true : false
   end
 end
+
