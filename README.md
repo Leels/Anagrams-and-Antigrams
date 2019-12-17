@@ -2,7 +2,7 @@
 ## By: Lela Smith
 
 ### Description
-#### Algorithm to check if words two words are anagrams or antigrams. A project to practice Test Driven Development in Ruby.
+#### Algorithm to check if two words are anagrams or antigrams. A project to practice Test Driven Development in Ruby.
 
 ### Specs
 |Behavior|Input|Output|
